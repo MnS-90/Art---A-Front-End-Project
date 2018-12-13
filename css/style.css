@@ -1,0 +1,400 @@
+html,
+body {
+    font-family: 'Kavivanar', cursive !important;
+    font-size: 62.5%;
+}
+
+/* ======LANDING PAGE SETUP======= */
+
+#landing-wallpaper {
+    background-image: url("../images/landingpage/landing-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.btn {
+    text-align: center;
+	position:absolute;
+	left: 50%;
+    top: 50%;
+	transform: translate(-50%,-50%);
+    background-color: rgb(2,101,156);
+    border-color: rgb(4,48,71);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    opacity: .7;
+}
+
+.btn a{
+    color: lightyellow;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.btn a:hover {
+    color: lightyellow;
+    text-decoration: none;
+}
+
+
+
+/* ============= HEADER STYLING ============ */
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 7rem;
+    padding-top: 5vh;
+    margin: 0;
+}
+
+#mobile-header-name {
+    display: none;
+}
+
+
+/* ============= MAIN STYLING ============== */
+
+main p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: flex-start;
+    margin-left: .5rem;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 1.8rem;
+}
+
+nav ul li a:hover {
+    color: rgb(104, 3, 3);
+    font-size: 2rem;
+}
+
+.dropdown-gallery {
+    display: inline;
+}
+
+.dropdown-gallery ul {
+    position: relative;
+    left: -2.1rem;
+    display: none;
+}
+
+.dropdown-gallery ul li a {
+    font-size: 1.3rem;
+}
+
+.dropdown-gallery:hover ul {
+    display: block;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.gallery-point1,
+.gallery-point2 {
+    display: list-item;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+#gallery-arrow img {
+    width: 1.1rem;
+    margin-left: .9rem;
+    padding-bottom: .3rem;
+}
+
+.dropdown-gallery:hover #gallery-arrow img {
+    transform: rotate(90deg);
+}
+
+#main-images img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#main-images p {
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: left;
+}
+
+
+/* ============= FOOTER STYLING ============ */
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 1.8rem;
+}
+
+
+/* ================= MOBILE STYLING $ BURGER MENU ====== */
+
+input[type="checkbox"]:checked+#wrapper nav {
+    display: block;
+}
+
+#hamb {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+#wrapper {
+    font-size: 3rem;
+    line-height: 3.27rem;
+}
+
+#wrapper nav {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0 !important;
+}
+
+#brand-box-mobile {
+    display: inline-block;
+}
+
+#wrapper nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#cv-text p {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+#cv-text p:nth-child(3) {
+    text-align: center;
+}
+
+.image-width img {
+    width: 100%;
+    height: auto;
+}
+
+#cv-image-1 p {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+#cv-image-2 p {
+    margin-top: 10rem;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+#cv-image-2 img {
+    margin-top: 10.5rem;
+}
+
+#cv-image-3 {
+    display: none;
+}
+
+
+/* =======FORM STYLE==================== */
+
+form {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.contact-header {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+textarea {
+    overflow: hidden !important;
+    resize: none !important;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#button-row button {
+    border: none;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+#button-row button a {
+    color: white;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+}
+
+#contact-form-image {
+    width: auto;
+    height: 45rem;
+}
+
+#contact-form-image-mobile {
+    display: none;
+}
+
+
+/* =============== MEDIA QUIRIES ============ */
+
+@media screen and (min-width:1850px) {
+    nav ul {
+        list-style: none;
+        justify-content: center;
+        margin-left: 3.9rem;
+    }
+    .dropdown-gallery ul {
+        position: relative;
+        left: -5rem !important;
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #mobile-header-name {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+    #main-images p {
+        text-align: center !important;
+    }
+    #img3-hide-me {
+        display: none;
+    }
+    #non-mobile {
+        display: none;
+    }
+    .burger {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 1.3rem;
+    }
+    li {
+        width: 100%
+    }
+    .dropdown-gallery ul {
+        left: 0;
+    }
+    .dropdown-gallery ul li a {
+        left: 0;
+        color: rgb(136, 19, 19);
+    }
+    #cv-text {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #cv-text p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    #cv-image-2 {
+        display: none;
+    }
+    #cv-image-3 {
+        display: block;
+        margin-top: 5rem;
+    }
+    #cv-image-3 p {
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .contact-header {
+        margin-top: 3rem;
+    }
+    #contact-form-image {
+        display: none;
+    }
+    #contact-form-image-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 3rem 0;
+    }
+    #modern-gallery-margins {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #landing-wallpaper {
+        background-image: url("../images/landingpage/landing-wallpaper-tablet.jpg") !important;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    #cv-text p {
+        font-size: 1.4rem;
+    }
+    #landing-wallpaper {
+        background-image: url("../images/landingpage/landing-wallpaper-1200px.jpg");
+    }
+}
+
+@media screen and (max-width:900px) {
+    #cv-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #img3-hide-me {
+        display: block;
+    }
+}
+
+
+/* ==== BOOTSTRAP MOBILE FIX AT 768px ==== */
+
+@media screen and (max-width:768px) {
+    #non-mobile {
+        text-align: center;
+    }
+    #non-mobile ul {
+        padding: 0;
+    }
+    .dropdown-gallery ul li a {
+        left: 0;
+        color: rgb(136, 19, 19);
+    }
+    #gallery-arrow {
+        display: none;
+    }
+}
