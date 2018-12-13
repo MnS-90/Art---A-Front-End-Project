@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar|Open+Sans:700" rel="stylesheet">
+    <title>VNikos - Contact</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row">
+                <div class="col-12 col-md-2">
+                    <div id="brand-box-mobile">
+                        <h1>VN</h1>
+                        <p class="header-name" id="mobile-header-name">Vlachakis Nick</p>
+                    </div>
+                    <!-- Mobile Nav ==========> -->
+                    <input type="checkbox" name="check" id="hamb">
+                    <div id="wrapper">
+                        <div class="burger"><label for="hamb">&#9776;</label></div>
+                        <nav>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li class="dropdown-gallery"><a href="#">Gallery</a>
+                                    <ul>
+                                        <li><a href="modernart.html">ModernArt</a></li>
+                                        <li><a href="hagiography.html">Ηagiography</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="cv.html">CV</a></li>
+                                <li><a class="active" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End of Mobile Nav <=========== -->
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-md-2 col-12">
+                    <div id="non-mobile">
+                        <p class="header-name">Vlachakis Nick</p>
+                        <!-- Desktop Nav ======== >  -->
+                        <nav>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                                <li class="dropdown-gallery"><a href="#">Gallery<span id="gallery-arrow"><img src="images/play-button.png" alt="gallery-arrow"></span></a>
+                                    <ul>
+                                        <li><a href="modernart.html"><span class="gallery-point1">ModernArt</span></a></li>
+                                        <li><a href="hagiography.html"><span class="gallery-point2">Ηagiography</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="cv.html">CV</a></li>
+                                <li><a class="active" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- ======= End of Desktop Nav ========== -->
+
+                <!-- ======Contact Form opening========== -->
+                <div class="col-12 col-md-3 offset-md-2">
+                    <h1 class="contact-header">Contact me</h1>
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                NAME<br><input type="text" name="full-name" required>
+                            </div>
+                            <div class="col-12">
+                                EMAIL<br><input type="email" name="email" required>
+                            </div>
+                            <div class="col-12">
+                                TELEPHONE<br><input type="text" name="phone">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <br>MESSAGE<br><textarea name="message" rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div id="button-row">
+                            <div class="row">
+                                <div class="col">
+                                    <button><a href="">SEND</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-3  offset-md-1">
+                    <img id="contact-form-image" src="images/modernart1.jpg" alt="art1">
+                    <img id="contact-form-image-mobile" src="images/modernart2.jpg" alt="art2">
+
+                </div>
+                <!-- ======Contact Form closing========== -->
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-12 col-md-2">
+                    <div class="media-buttons">
+                        <a href="#" target="_blank"><img src="images/facebook-logo-button.png" alt="fb"></a>
+                        <a href="#" target="_blank"><img src="images/twitter-logo-button.png" alt="twit"></a>
+                        <a href="#" target="_blank"><img src="images/instagram-logo (3).png" alt="insta"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
